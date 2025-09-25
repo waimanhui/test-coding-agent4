@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Customer Stories - AI in Hong Kong</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">Microsoft Customer Stories</h1>
+                <p class="subtitle">Artificial Intelligence Success Stories from Hong Kong</p>
+                <div class="filter-info">
+                    <span class="filter-tag">AI Solutions</span>
+                    <span class="filter-tag">Hong Kong SAR</span>
+                    <span id="story-count" class="story-count">Loading stories...</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="loading" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading customer stories...</p>
+            </div>
+
+            <div id="stories-grid" class="stories-grid">
+                <!-- Stories will be dynamically loaded here -->
+            </div>
+
+            <div id="error" class="error-message" style="display: none;">
+                <h3>Error Loading Stories</h3>
+                <p>Unable to load customer stories. Please try again later.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Microsoft Corporation. All rights reserved.</p>
+            <p>Data scraped from <a href="https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc" target="_blank">Microsoft Customer Stories</a></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
